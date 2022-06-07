@@ -1,0 +1,51 @@
+.registration {
+    .container {
+        @media (min-width: 576px) {
+            padding: 0;
+        }
+    }
+
+    &__inner {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        display: flex;
+
+        @media (min-width: 1200px) {
+            padding-top: 0;
+            padding-bottom: 0;
+            min-height: 100vh;
+        }
+    }
+
+    &__title {
+        @media (min-width: 576px) {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+
+    &__box {
+        width: 100%;
+
+        @media (min-width: 1200px) {
+            width: 55%;
+            padding: 160px 0 200px;
+        }
+    }
+
+    &__bgc {
+        display: none;
+
+        @media (min-width: 1200px) {
+            display: block;
+            width: 45%;
+            background: center top/100% no-repeat
+                    url(../img/registration-bgc.png),
+                $gray-light;
+        }
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+}

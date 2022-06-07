@@ -1,0 +1,41 @@
+$main-font: "Manrope", "sans-serif";
+$mob-padding: 16px;
+
+*,
+*:after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $main-font;
+    font-size: 14px;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeSpeed;
+    line-height: 1.4;
+    font-weight: 500;
+    color: $dark;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 0 $mob-padding;
+    margin: 0 auto;
+}
+
+.container_fluid {
+    padding: 0;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -2%;
+}
+
+img {
+    display: block;
+    width: 100%;
+}

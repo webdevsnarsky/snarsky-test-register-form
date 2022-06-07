@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snarsky - Frontend Inteview</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+
+<body>
+    <main class="main">
+        <section class="registration">
+            <div class="container">
+                <div class="registration__inner">
+                    <div class="registration__box">
+                        <h1 class="registration__title">Регистрация</h1>
+
+                        <form class="form">
+                            <div class="form__boxes">
+                                <div class="form__box">
+                                    <label for="name" class="form__label">Имя <span class="asterisk_red">*</span></label>
+                                    <input type="text" required id="name" class="form__input">
+                                </div>
+                                <div class="form__box">
+                                    <label for="surname" class="form__label">Фамилия <span class="asterisk_red">*</span></label>
+                                    <input type="text" required id="surname" class="form__input">
+                                </div>
+                                <div class="form__box">
+                                    <label for="email" class="form__label">Email <span class="asterisk_red">*</span></label>
+                                    <input type="email" required id="email" class="form__input">
+                                </div>
+                                <div class="form__box">
+                                    <label for="tel" class="form__label">Телефон <span class="asterisk_red">*</span></label>
+                                    <input type="tel" id="tel" class="form__input form__input-phone" required>
+                                </div>
+                            </div>
+
+                            <div class="form__box">
+                                <label for="password" class="form__label">Пароль <span class="asterisk_red">*</span></label>
+                                <div class="form__input-wrap">
+                                    <input type="password" required id="password" class="form__input form__input-password">
+                                    <div class="form__eye-wrap">
+                                        <img src="./assets/img/form/eye.svg" class="form__eye" alt="пароль скрыт">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__box form__box_small-gutter">
+                                <label for="register" class="form__label">ИНН <span class="asterisk_red">*</span></label>
+                                <input type="text" required id="register" class="form__input">
+                            </div>
+                            <p class="form__text">Ваша компания уже зарегистрирована, пожалуйста обратитесь к
+                                менеджеру вашего
+                                аккаунта или <a href="#" class="form__link">напишите нам</a></p>
+
+                            <div class="form__text form__text_requared"><span class="asterisk_red">*</span> - обязательные поля</div>
+
+                            <div class="form__box">
+                                <input type="checkbox" class="form__checkbox" id="agreement">
+                                <label for="agreement" class="form__label form__label-checkbox">Да, я хочу получать письма с новостями и предложениями
+                                </label>
+                            </div>
+                            <button type="submit" class="button form__button">Далее</button>
+                        </form>
+                    </div>
+                    <div class="registration__bgc">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
